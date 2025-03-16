@@ -1,0 +1,250 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Portfolio</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <style>
+        .custom-navbar {
+            background-color: #6500b6; 
+        }
+        .hero-section {
+            padding: 5% 0;
+        }
+        .Skill-section, .projects-section, #workexperience, #recommendations {
+            margin: 5% 0;
+        }
+        .skill-image {
+            transition: transform 0.3s, box-shadow 0.3s; /* Smooth transition for hover effect */
+        }
+        .skill-image:hover {
+            transform: scale(1.1); /* Scale up the image */
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3); /* Add shadow */
+        }
+        .hero-img {
+            transition: transform 0.3s, box-shadow 0.3s;
+        }
+        .hero-img:hover {
+            transform: scale(1.1); /* Scale up the image */
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3); /* Add shadow */
+        }
+        .btn-custom {
+            border: 1px solid gray; /* Gray outline */
+            background-color: transparent; /* Transparent background */
+            color: gray; /* Gray text color */
+        }
+        .btn-custom:hover {
+            background-color: #6c757d; /* Change to gray on hover */
+            color: white; /* Change text color to white */
+        }
+        .recommendation-card {
+            transition: transform 0.3s, box-shadow 0.3s; /* Smooth transition for hover effect */
+            background-color: #f8f9fa; /* Light background color */
+            margin: 1rem; /* Margin around cards */
+        }
+        .recommendation-card:hover {
+            transform: scale(1.05); /* Scale up the card */
+            box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2); /* Add shadow */
+        }
+    </style>
+</head>
+<body>
+
+<nav class="navbar navbar-expand-lg bg-body-tertiary">
+    <div class="container-fluid d-flex justify-content-between">
+        <div class="d-flex flex-column align-items-start" style="padding: 3%; margin-left: 6%;">
+            <a class="navbar-brand" href="#">Fon Chris Bright</a>
+            <div>
+                <i class="fas fa-envelope"></i> <a href="mailto:pemmenyif@gmail.com">pemmenyif@gmail.com</a>
+            </div>
+            <div>
+                <i class="fas fa-phone"></i> <a href="tel:+237677684842">+237677684842</a>
+            </div>
+        </div>
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav ms-auto" style="margin-right: 15%;">
+                <li class="nav-item">
+                    <a class="nav-link active" aria-current="page" href="#hero-section">About Me</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#skills-section">Skills</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#projects-section">Projects</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#recommendations">Recommendations</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#workexperience">Work Experience</a>
+                </li>
+            </ul>
+        </div>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+    </div>
+</nav>
+
+<section class="hero-section" id="hero-section">
+    <div class="container">
+        <div class="row align-items-center">
+            <div class="col-md-6">
+                <img src="me2.jpg" alt="my portfolio image" class="hero-img img-fluid" style="width: 50%; height: auto;">
+            </div>
+            <div class="col-md-6">
+                <h1>Hi, I'm Fon Chris Bright Pemmenyi</h1>
+                <p>I'm a web developer currently pursuing a bachelor's degree in software engineering at The ICT University. I have three years of experience in web development using frameworks like Symfony, Flask, Django, and Bootstrap. I'm versed in programming languages such as Python, HTML, CSS, and JavaScript.</p>
+                <p>Apart from web development, I also do graphic designing using Photoshop, Canva, and Webflow to help with your social media flyers, brochures, logos, brands, and marketing designs.</p>
+                <a class="btn btn-custom" href="Fon chris.pdf" style="margin-top: 20px;">Download Resume</a>
+            </div>
+        </div>
+    </div>
+</section>
+<hr>
+
+<section class="Skill-section" id="skills-section">
+    <div class="container">
+        <h2>Skills</h2>
+        <div class="row align-items-center text-center">
+            <div class="col-md-3 col-sm-6"> 
+                <img src="htmlcssjs.png" class="img-fluid skill-image" alt="HTML, CSS, JS logo" style="height: auto; width: 70%;">    
+            </div>
+            <div class="col-md-3 col-sm-6"> 
+                <img src="django.jpeg" class="img-fluid skill-image" alt="Django logo" style="height: auto; width: 70%; margin: 2%;">    
+            </div>
+            <div class="col-md-3 col-sm-6"> 
+                <img src="flask.jpeg" class="img-fluid skill-image" alt="Flask logo" style="height: auto; width: 70%;">    
+            </div>
+            <div class="col-md-3 col-sm-6"> 
+                <img src="symfony.png" class="img-fluid skill-image" alt="Symfony logo" style="height: auto; width: 70%;">    
+            </div>
+        </div>
+        <hr>
+    </div>
+</section>
+
+<section class="projects-section" id="projects-section">
+  <div class="container">
+      <h2>Projects</h2>
+      <div class="row text-center">
+          <div class="col-md-4 col-sm-12 mb-4"> 
+            <div class="card">
+                <div class="card-body">
+                  <h5 class="card-title">Orientaa</h5>
+                  <p class="card-text">An AI powered web app for university recommendation, orientation, blogging, and networking in Cameroon.</p>
+                  <a href="https://github.com/Fonchris/OrientaupdateDjango" class="card-link">Project Repo</a>
+                  <a href="https://github.com/Fonchris" class="card-link">Github Repo</a>
+                </div>
+              </div>
+          </div>
+          <div class="col-md-4 col-sm-12 mb-4"> 
+            <div class="card">
+                <div class="card-body">
+                  <h5 class="card-title">Flask Blog</h5>
+                  <p class="card-text">A custom blog web application created with Flask backend and HTML, CSS, and JavaScript frontend.</p>
+                  <a href="https://github.com/Fonchris/orienta_website.git" class="card-link">Project Repo</a>
+                  <a href="https://github.com/Fonchris" class="card-link">Github Repo</a>
+                </div>
+              </div>
+          </div>
+          <div class="col-md-4 col-sm-12 mb-4"> 
+            <div class="card">
+                <div class="card-body">
+                  <h5 class="card-title">Mars</h5>
+                  <p class="card-text">Built notification systems and API for remote connecting, disconnecting, and reading of smart IoT meters at ENEO.</p>
+                  <a href="https://github.com/Fonchris/M.A.R.S-Notification-.git" class="card-link">Project Repo</a>
+                  <a href="https://github.com/Fonchris" class="card-link">Github Repo</a>
+                </div>
+              </div>
+          </div>
+      </div>
+  </div>
+</section>
+
+<section id="workexperience">
+    <div class="container">
+        <h2>Work Experience</h2>
+        <h4>ENEO</h4>
+        <p>Web development intern at ENEO (Oct-Dec 2024)</p>
+        <hr>
+        <h4>Ngcodex</h4>
+        <p>Graphic Designer at Ngcodex (2024)</p>
+    </div>
+</section>
+
+<section id="recommendations">
+    <div class="container">
+        <h2>Recommendations</h2>
+        <div class="row text-center">
+            <div class="col-md-4 col-sm-12 mb-4">
+                <div class="card recommendation-card">
+                    <div class="card-body">
+                      <p class="card-text">Fon has a remarkable ability to grasp complex programming concepts quickly. During his internship at ENEO, he demonstrated exceptional problem-solving skills and took the initiative to lead team discussions. His dedication and work ethic make him a valuable team player.</p>
+                    </div>
+                  </div>
+            </div>
+            <div class="col-md-4 col-sm-12 mb-4">
+                <div class="card recommendation-card">
+                    <div class="card-body">
+                      <p class="card-text">Working with Fon at Ngcodex was a fantastic experience. His creativity and attention to detail in graphic design projects were impressive. He consistently delivered high-quality work and always sought feedback to improve. I would gladly collaborate with him on future projects.</p>
+                    </div>
+                  </div>
+            </div>
+            <div class="col-md-4 col-sm-12 mb-4">
+                <div class="card recommendation-card">
+                    <div class="card-body">
+                      <p class="card-text">I had the pleasure of mentoring Fon during his internship, and I was consistently impressed by his eagerness to learn and grow. His strong foundation in web development and design, combined with his enthusiasm, makes him an asset to any team.</p>
+                    </div>
+                  </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+
+
+<div class="container">
+    <footer>
+        <div class="row">
+            <div class="col-md-3">
+                <h5>Main Roles and Responsibilities</h5>
+                <p>Design and implementation of websites and web applications for your business ideas, alongside domain name registration, search engine optimization, and design of brochures, flyers, and marketing materials.</p>
+            </div>
+            <div class="col-md-3">
+                <h5>Interpersonal Skills</h5>
+                <ul>
+                    <li>Public speaking</li>
+                    <li>Time management</li>
+                    <li>Effective communication</li>
+                </ul>
+            </div>
+            <div class="col-md-3">
+                <h5>More</h5>
+                <a href="https://t.co/85Da3Tn8ND">WhatsApp Chat</a><br>
+                <a href="{% url 'sponsorship' %}">Sponsorship/Donation</a><br>
+                <a href="https://www.instagram.com/chris_b_designs/">Graphic Designs</a><br>
+                <a href="https://www.linkedin.com/in/fon-pemmenyi-2aa328262/">LinkedIn</a><br>
+            </div>
+            <div class="col-md-3">
+                <h5>Contact</h5>
+                <p><i class="fas fa-home mr-3"></i> Yaounde, Cameroon, Messasi</p>
+                <p><i class="fas fa-envelope mr-3"></i> <a href="mailto:pemmenyi@gmail.com">pemmenyi@gmail.com</a></p>
+                <p><i class="fas fa-phone mr-3"></i> +237 677684842</p>
+                <p><i class="fas fa-phone mr-3"></i> +237 686 296 775</p>
+            </div>
+        </div>
+        <hr>
+        <p style="text-align: center;">© 2025 copyright: orienta.com</p>
+        <a class="btn btn-outline-light btn-floating m-1" class="text-white" role="button"><i class="fab fa-facebook-f"></i></a>
+        <a class="btn btn-outline-light btn-floating m-1" class="text-white" role="button"><i class="fab fa-twitter"></i></a>
+        <a class="btn btn-outline-light btn-floating m-1" class="text-white" role="button"><i class="fab fa-google"></i></a>
+        <a class="btn btn-outline-light btn-floating m-1" class="text-white" role="button"><i class="fab fa-instagram"></i></a>
+    </footer>
+</div>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+
+</body>
+</html>
